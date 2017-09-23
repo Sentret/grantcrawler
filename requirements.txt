@@ -8,7 +8,6 @@ constantly==15.1.0
 cryptography==2.0.3
 cssselect==1.0.1
 Django==1.11.5
-get==0.0.0
 hyperlink==17.3.1
 idna==2.6
 incremental==17.5.0
@@ -25,7 +24,6 @@ pyOpenSSL==17.3.0
 pytz==2017.2
 query-string==0.0.0
 queuelib==1.4.2
-request==0.0.0
 requests==2.18.4
 Scrapy==1.4.0
 scrapy-djangoitem==1.1.1
