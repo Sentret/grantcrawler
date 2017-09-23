@@ -4,6 +4,7 @@ from grants.items import GrantItem
 
 
 class TPSpider(BaseSpider):
+    name = 'tp'
     custom_settings = {
         'ITEM_PIPELINES': {
             'grants.pipelines.TpPipeline': 1000

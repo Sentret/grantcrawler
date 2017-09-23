@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from scrapy import log
 from scrapy.exceptions import DropItem
 from django.db.utils import IntegrityError
@@ -14,30 +8,27 @@ import re
 class GrantPipeline(object):
     def process_item(self, item, spider):
 
-
-     item['title'] = item['title'][0]
-     item['date'] = item['date'][0]    
+        item['title'] = item['title'][0]
+        item['date'] = item['date'][0]    
 
 #поиск даты в строке
-     match = re.search(r'\d{2}.\d{2}.\d{4}', item['date'])
-     dt = datetime.strptime(match.group(),'%d.%m.%Y').date()
+        match = re.search(r'\d{2}.\d{2}.\d{4}', item['date'])
+        dt = datetime.strptime(match.group(),'%d.%m.%Y').date()
 #сравнение даты с текущей, чтобы не добавлять в бд просроченные конкурсы
      
-     if date.today() > dt:
-     	return item
+        if date.today() > dt:
+     	    return item
      
-     item['date'] = dt.strftime('%d.%m.%Y').replace("/",".")    	
-     item.save()
+        item['date'] = dt.strftime('%d.%m.%Y').replace("/",".")    	
+        item.save()
 	
  	 
-     return item
+        return item
 
 
 class TpPipeline(object):
-    def process_item(self, item, spider):
 
-    
-     item['link'] = "https://theoryandpractice.ru" + item['link']	
-     item.save()
- 	 
-     return item
+    def process_item(self, item, spider):  
+        item['link'] = "https://theoryandpractice.ru" + item['link']	
+        item.save()	 
+        return item

@@ -2,22 +2,20 @@
 {% load staticfiles %}
 {% block content %}
 
-   <h1 class="page-header">Список грантов </h1>
 
-
-   <a class='btn btn-primary' >Управление краулером</a>  
-		   		
+   <h1 class="page-header">Список грантов </h1>		
+<div>
+   <a class='btn btn-primary js-create-group' href="/crawl" ">Запуск краулера</a> 
+   <a class='btn btn-primary js-create-group' href="/djangoadmin">Страница администрации</a> 
+   
+</div>
    <div class = "container">
-   	<table class="table">
+   	<table class="table table-hover">
 
-   		<thead>
+   		<thead class="thead-inverse">
    			<tr>
-   				<th>Название</th>
-   				<th>Дата</th>
-   				<th></th>
-   				<th></th>
-   			
-   				
+   				<th scope="row">Название</th>
+   				<th>Дата</th>				
    			</tr>
 
    		</thead>
@@ -25,14 +23,13 @@
    		<tbody>
    		{% for grant in grants %}
    			<tr>
-   				<td style = "width:900px">
+   				<td style = "width:900px" href="{{grant.link}}">
                   <a target="_new" href="{{grant.link}}">{{ grant.title }}</a>
    				</td>
    				<td style = "width:100px">
    					{{ grant.date}}
    				</td>
-		   		
-   				<td style ="width:50px"> 
+		   	
    			
    			</tr>
    		{% endfor %}
@@ -42,6 +39,27 @@
    
    </div>
 
+ {% if grants.has_other_pages %}
+  <ul class="pagination">
+    {% if grants.has_previous %}
+      <li><a href="?page={{ grants.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in grants.paginator.page_range %}
+      {% if grants.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if grants.has_next %}
+      <li><a href="?page={{ grants.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
    
 {% endblock content %}
 

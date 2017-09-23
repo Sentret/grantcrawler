@@ -4,6 +4,5 @@ from app.models import Grant
 
 
 class GrantItem(DjangoItem):
-
     django_model = Grant
     
