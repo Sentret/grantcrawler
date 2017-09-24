@@ -46,7 +46,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'e21of8_cnxo2ob%i6by8hy3j@vix#&oa@6uq%=x7atz)&*%ihy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['grantcrawler.herokuapp.com']
 
