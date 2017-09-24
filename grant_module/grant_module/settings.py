@@ -48,7 +48,7 @@ SECRET_KEY = 'e21of8_cnxo2ob%i6by8hy3j@vix#&oa@6uq%=x7atz)&*%ihy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysterious-anchorage-19672.herokuapp.com']
+ALLOWED_HOSTS = ['grantcrawler.herokuapp.com']
 
 
 # Application definition
