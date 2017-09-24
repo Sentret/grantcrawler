@@ -1,0 +1,160 @@
+2017-09-23 19:50:18 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bot_name)
+2017-09-23 19:50:18 [scrapy.utils.log] INFO: Overridden settings: {'SPIDER_MODULES': ['grants.spiders'], 'NEWSPIDER_MODULE': 'grants.spiders', 'LOG_FILE': 'logs/default/rfbr/6ae9b6faa09811e7bb4d001e58a528a4.log', 'BOT_NAME': 'bot_name', 'ROBOTSTXT_OBEY': True}
+2017-09-23 19:50:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-09-23 19:50:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-23 19:50:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-23 19:50:18 [py.warnings] WARNING: /home/eugene/coursework3-master/grants/grants/pipelines.py:1: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2017-09-23 19:50:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['grants.pipelines.GrantPipeline']
+2017-09-23 19:50:18 [scrapy.core.engine] INFO: Spider opened
+2017-09-23 19:50:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-23 19:50:18 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-23 19:50:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.rfbr.ru/rffi/ru/pages/404> from <GET http://www.rfbr.ru/robots.txt>
+2017-09-23 19:50:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.rfbr.ru/rffi/ru/pages/404> (referer: None)
+2017-09-23 19:50:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.rfbr.ru/rffi/ru/contest> (referer: None)
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '15.08.2018',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2046686',
+ 'title': 'Конкурс проектов 2018 года организации российских и международных '
+          'научных мероприятий, проводимый РФФИ'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '30.11.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2046149',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый Российским фондом фундаментальных исследований совместно '
+          'с организациями - участниками Рамочной программы БРИКС в сфере '
+          'науки, технологий и инноваций'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '31.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2045730',
+ 'title': 'Конкурс проектов 2018 года организации на территории России '
+          'российско-британских семинаров молодых ученых, проводимый совместно '
+          'РФФИ и Лондонским Королевским Обществом'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '02.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044495',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Белорусским республиканским фондом '
+          'фундаментальных исследований'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '16.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044483',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Шанхайской академией общественных наук'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '16.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044481',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Фондом «Дом наук о человеке» (Франция)'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '16.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044480',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Фондом «За  русский язык и культуру» в '
+          'Венгрии'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '16.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044479',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Министерством образования, культуры и '
+          'науки Монголии'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '16.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044478',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Академией общественных наук Китая'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '16.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2044474',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Вьетнамской академией общественных наук'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '30.11.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2043703',
+ 'title': 'Конкурс проектов 2018 года по изданию тематических научных трудов'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '13.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2043513',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Национальным исследовательским советом '
+          'Италии'}
+2017-09-23 19:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '05.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2043343',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'выполняемых молодыми учеными (Мой первый грант)'}
+2017-09-23 19:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '15.10.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2043234',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Национальным научным фондом Болгарии'}
+2017-09-23 19:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '27.09.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2043126',
+ 'title': 'Конкурс проектов  2018 года фундаментальных научных исследований'}
+2017-09-23 19:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '01.12.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_2041715',
+ 'title': 'Конкурс проектов 2018 года фундаментальных научных исследований в '
+          'рамках международных ассоциированных лабораторий (МАЛ) и '
+          'международных научных объединений (МНО), проводимый совместно РФФИ '
+          'и Национальным центром научных исследований Франции'}
+2017-09-23 19:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '25.09.2017',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_1969699',
+ 'title': 'Конкурс научных проектов, выполняемых молодыми учеными под '
+          'руководством кандидатов и докторов наук в научных организациях '
+          'Российской Федерации'}
+2017-09-23 19:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.rfbr.ru/rffi/ru/contest>
+{'date': '01.02.2018',
+ 'link': 'http://www.rfbr.ru/rffi/ru/contest/o_1930312',
+ 'title': 'Конкурс инициативных проектов фундаментальных научных исследований, '
+          'проводимый совместно РФФИ и Австрийским научным фондом (АНФ)'}
+2017-09-23 19:50:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-09-23 19:50:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 724,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 35664,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 9, 23, 19, 50, 26, 300171),
+ 'item_scraped_count': 18,
+ 'log_count/DEBUG': 22,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 65970176,
+ 'memusage/startup': 65970176,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2017, 9, 23, 19, 50, 18, 586352)}
+2017-09-23 19:50:26 [scrapy.core.engine] INFO: Spider closed (finished)
