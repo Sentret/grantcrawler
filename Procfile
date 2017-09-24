@@ -1,1 +1,1 @@
-web: gunicorn grant_module.grant_module.wsgi --log-file -
+web: gunicorn project.grant_module.wsgi --log-file -
