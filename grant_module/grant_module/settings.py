@@ -49,7 +49,7 @@ SECRET_KEY = 'e21of8_cnxo2ob%i6by8hy3j@vix#&oa@6uq%=x7atz)&*%ihy'
 DEBUG = True
 
 ALLOWED_HOSTS = ['grantcrawler.herokuapp.com']
-
+# ALLOWED_HOSTS = ['0.0.0.0']
 
 # Application definition
 

@@ -5,6 +5,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 import requests
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+import json
 
 
 @login_required
@@ -27,18 +28,13 @@ def grant_list(request):
 @login_required
 def crawler(request):
 
-    data = [
-       ['project', 'default'],
-       ['spider', 'rfbr'],
-           ]
+    resp = requests.get('https://storage.scrapinghub.com/items/239574/?format=json', auth=('cfdcde65f04b417ebfc8d6ea60952966', ''))
+    grants = resp.json()
 
-    requests.post('http://127.0.0.1:6800/schedule.json', data=data)
-
-    data[1][1] = 'rscf'
-    requests.post('http://127.0.0.1:6800/schedule.json', data=data)
-
-    data[1][1] = 'tp'
-    requests.post('http://127.0.0.1:6800/schedule.json', data=data)
+    for grant in grants:
+        if not Grant.objects.filter(title=grant['title']):
+            Grant.objects.create(title=grant['title'], date=grant['date'],
+                      link=grant['link'])
 
     return redirect('grant_list')
 
