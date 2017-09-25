@@ -32,13 +32,13 @@ def crawler(request):
        ['spider', 'rfbr'],
            ]
 
-    requests.post('http://localhost:6800/schedule.json', data=data)
+    requests.post('http://127.0.0.1:6800/schedule.json', data=data)
 
     data[1][1] = 'rscf'
-    requests.post('http://localhost:6800/schedule.json', data=data)
+    requests.post('http://127.0.0.1:6800/schedule.json', data=data)
 
     data[1][1] = 'tp'
-    requests.post('http://localhost:6800/schedule.json', data=data)
+    requests.post('http://127.0.0.1:6800/schedule.json', data=data)
 
     return redirect('grant_list')
 
