@@ -7,7 +7,10 @@ chardet==3.0.4
 constantly==15.1.0
 cryptography==2.0.3
 cssselect==1.0.1
+<<<<<<< HEAD
 dj-database-url==0.4.2
+=======
+>>>>>>> ecc349c1e28095aa3d18b4ff46ccd645d4b24593
 Django==1.11.5
 gunicorn==19.7.1
 hyperlink==17.3.1
@@ -15,14 +18,20 @@ idna==2.6
 incremental==17.5.0
 lxml==4.0.0
 parsel==1.2.0
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecc349c1e28095aa3d18b4ff46ccd645d4b24593
 pyasn1==0.3.6
 pyasn1-modules==0.1.4
 pycparser==2.18
 PyDispatcher==2.0.5
 pyOpenSSL==17.3.0
 pytz==2017.2
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecc349c1e28095aa3d18b4ff46ccd645d4b24593
 queuelib==1.4.2
 requests==2.18.4
 Scrapy==1.4.0
@@ -34,5 +43,8 @@ six==1.11.0
 Twisted==17.9.0
 urllib3==1.22
 w3lib==1.18.0
+<<<<<<< HEAD
 whitenoise==3.3.1
+=======
+>>>>>>> ecc349c1e28095aa3d18b4ff46ccd645d4b24593
 zope.interface==4.4.3
